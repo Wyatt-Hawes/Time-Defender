@@ -70,12 +70,12 @@ What  we did:
 
 ## Progression: 
 What we did:
-1. We have a difficulty variable that is based on time. As the difficulty goes up, the chance of a Time Fissure spawning increases. Higher Difficulty sees an increasing onslaught of Time Cracks. Currently this is linear, but I want to change to a different curve.
+1. We have a difficulty variable that is based on time. As the difficulty goes up, the chance of a Time Fissure spawning increases. Higher Difficulty sees an increasing onslaught of Time Cracks. Currently, this is linear, but I want to change to a different curve.
 2. We have multiple styles of time fissures, which start to appear at higher difficulty and other events start based on the difficulty counter as well. 
 
 ## Prefabs:
 What we did:
-1. DefenderScene which extends the standard Phaser Scene, is our base scene, it loads our assets, and it stores functions all of the scenes need, it's currently primarily used in the title. DefenderGameScene Extends DefenderScene, and adds the aspects of the gameplay that aren't necessary for the Base DefenderScene. This contains timers, groups, colliders, and the necessary functions to run the game.
+1. DefenderScene which extends the standard Phaser Scene, is our base scene, it loads our assets, and it stores functions all of the scenes need, it's currently primarily used in the title. DefenderGameScene Extends DefenderScene and adds the aspects of the gameplay that aren't necessary for the Base DefenderScene. This contains timers, groups, colliders, and the necessary functions to run the game.
 2. LaserGroup which extends Phaser.Physics.Arcade.Group and creates multiples of: Laser which extends Phaser.Physics.Arcade.Sprite.
 3. Different Types of Lasers/Blasts (extends Laser object)
 4. Power Up Class, with different powerups extending the base class.
